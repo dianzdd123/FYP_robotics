@@ -1,5 +1,20 @@
 # GPT-Powered Multi-Robot Control
 
+## Start here
+
+This repository is a fork of [Dan1678/FYP_robotics](https://github.com/Dan1678/FYP_robotics). Original authorship, citations and upstream notices are retained. Changes here apply to this fork.
+
+**Scope:** Experimental hardware pipeline; robot endpoints, calibration, model weights and API access must be configured.
+
+| Need | Where to start |
+|---|---|
+| Setup, file map, inputs/outputs and troubleshooting | [Reuse guide](docs/REUSE.md) |
+| Local structural validation | `python scripts/check_repository.py` (Python 3.10+) |
+| Proposed fixes and reproducibility details | [Contributing](CONTRIBUTING.md) |
+
+The structural check does not run experiments or certify hardware, model accuracy or dependency compatibility. Reuse permissions need clarification: this checkout has no repository-wide licence file.
+
+
 ## Overview  
 This repository implements a closed-loop multi-robot pick-and-place pipeline driven by large language models (LLMs) and vision networks. It combines:
 
@@ -14,8 +29,8 @@ This repository implements a closed-loop multi-robot pick-and-place pipeline dri
   - A second “verification” agent that confirms placements via vision and issues retries on failure  
 
 ## Entry points  
-- Single-robot baseline (`single_robot_system.py`)
-- Dual-robot (`dual_robot_system.py`)
+- Single-robot baseline (`SingleRobotSystem/single_robot_system.py`)
+- Dual-robot (`DoubleRobotSystem/DualRobotSystem.py`)
 
 
 ## Dependencies
