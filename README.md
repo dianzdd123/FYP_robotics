@@ -4,6 +4,8 @@
 
 ## Start here
 
+**Repository:** [dianzdd123/FYP_robotics](https://github.com/dianzdd123/FYP_robotics)
+
 This repository is a fork of [Dan1678/FYP_robotics](https://github.com/Dan1678/FYP_robotics). Original authorship, citations and upstream notices are retained. Changes here apply to this fork.
 
 **Scope:** Experimental hardware pipeline; robot endpoints, calibration, model weights and API access must be configured.
